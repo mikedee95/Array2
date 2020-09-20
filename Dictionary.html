@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word = prompt("Enter a word: ");
+    let acronyms = [
+        {
+            acronyms: "dog",
+            meaning: "con cho"
+        },
+        {
+            acronyms: "cat",
+            meaning: "con meo"
+        },
+        {
+            acronyms: "hello",
+            meaning: "xin chao"
+        },
+        {
+            acronyms: "goodbye",
+            meaning: "tam biet"
+        }
+    ];
+    for (let i = 0; i < acronyms.length; i++) {
+        if (acronyms[i].acronyms === word) {
+            word = acronyms[i].meaning;
+        }
+    }
+    output = word;
+    alert(document.getElementById(output))
+
+</script>
+</body>
+</html>
